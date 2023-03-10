@@ -1,5 +1,5 @@
 h1{
-    color:blueviolet;
+    color:rgb(185, 127, 240);
     border: 0.4rem dotted palevioletred 
 }
 h2, h3, h4, h5, h6 {
@@ -15,35 +15,81 @@ body ul li{
 p.maiusculo {
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1rem;
+  letter-spacing: 0.5rem;
   line-height: 2rem;
-  word-spacing: 2rem;
+  word-spacing: 0.5rem;
   color:rgb(231, 166, 191);
   font: italic small-caps bold 2rem monospace;
-  text-shadow: o.2rem 0.2rem 0.3rem #000, 0 0 1rem rgb(231, 127, 167), 0 0 2rem rgb(255, 164, 250);
+  text-shadow: 0.2rem 0.2rem 0.3rem #000, 0 0 1rem rgb(231, 127, 167), 0 0 2rem rgb(255, 164, 250);
 
 }
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color:rgb(231, 127, 167);
+}
+a:hover {
+    color:rgb(231, 127, 167)
+}
+footer {
+    clear: both;
+    background:rgb(193, 149, 235) no-repeat left bottom;
+    height: 1rem;
+}
+div {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    z-index: 2rem;
+    background-color: rgba(255, 117, 186, 0.575);
+    color: white;
+    border: 0.2rem solid rgb(255, 164, 250);
+    padding: 0.2rem;
+    font-size: 2rem;
+}
 #page1 {
-    color:blueviolet;
+    color:rgb(185, 127, 240);
+}
+h1#page1 {
+    color:rgb(185, 127, 240);
+    border: 0.3rem dashed rgb(185, 127, 240);
+}
+img {
+    width: 20rem;
+}
+ul {
+    list-style-type: square;
 }
 .page2{
-    color:blueviolet;
+    color:rgb(185, 127, 240);
 }
-h2{
-    color:blueviolet;
+h1.page2 {
+    color:rgb(185, 127, 240);
+    border: 1rem groove rgb(185, 127, 240);
+    border-radius: 0.7rem;
 }
-h3{
-    color:blueviolet;
+ol {
+    list-style-type: upper-roman;
 }
-h4{
-    color:blueviolet;
-}
-h5{
-    color: blueviolet;
-}
-h6{
-    color: blueviolet;
+section img {
+    float: left
 }
 body ul li {
     color:rgb(255, 164, 250);
+}
+main.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem
+}
+main.flexbox {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+main.flexbox article {
+    background-color:rgb(185, 127, 240);
+    margin: 1rem;
+    padding: 2rem;
 }
